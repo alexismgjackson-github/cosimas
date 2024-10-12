@@ -54,7 +54,7 @@ export default function Header() {
             style={({ isActive }) => (isActive ? activeStyle : null)}
           >
             <img
-              src="public/assets/icons/cart.svg"
+              src="assets/icons/cart.svg"
               alt="Shopping cart icon"
               aria-label="Go to shopping cart"
             />
@@ -62,7 +62,7 @@ export default function Header() {
           <div className="hamburger-menu">
             <button className="hamburger-btn" onClick={handleClick}>
               <img
-                src="public/assets/icons/hamburger.svg"
+                src="assets/icons/hamburger.svg"
                 alt="Hamburger menu icon"
                 aria-label="Open or close hamburger menu"
               />
