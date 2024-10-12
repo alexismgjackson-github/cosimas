@@ -6,7 +6,7 @@ export default function Home() {
       <section className="hero">
         <img
           className="hero-img"
-          src="public/assets/images/unsplash1.jpg"
+          src="./public/assets/images/unsplash1.jpg"
           alt="Three stainless steel portafilters filled with whole coffee beans, grinded coffee and cappuccino"
         />
       </section>
@@ -32,7 +32,7 @@ export default function Home() {
       </section>
       <section className="gallery">
         <div className="gallery-container">
-          <img src="public/assets/images/unsplash2.jpg" alt="" />
+          <img src="./public/assets/images/unsplash2.jpg" alt="" />
           <img src="public/assets/images/unsplash3.jpg" alt="" />
           <img src="public/assets/images/unsplash4.jpg" alt="" />
           <img src="public/assets/images/unsplash27.jpg" alt="" />
