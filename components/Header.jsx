@@ -54,17 +54,17 @@ export default function Header() {
             style={({ isActive }) => (isActive ? activeStyle : null)}
           >
             <img
-              src="src/assets/icons/cart.svg"
+              src="public/assets/icons/cart.svg"
               alt="Shopping cart icon"
-              aria-aria-label="Go to shopping cart"
+              aria-label="Go to shopping cart"
             />
           </NavLink>
           <div className="hamburger-menu">
             <button className="hamburger-btn" onClick={handleClick}>
               <img
-                src="src/assets/icons/hamburger.svg"
+                src="public/assets/icons/hamburger.svg"
                 alt="Hamburger menu icon"
-                aria-aria-label="Open or close hamburger menu"
+                aria-label="Open or close hamburger menu"
               />
             </button>
             {toggle ? (
