@@ -6,7 +6,7 @@ export default function Home() {
       <section className="hero">
         <img
           className="hero-img"
-          src="./public/assets/images/unsplash1.jpg"
+          src="assets/images/unsplash1.jpg"
           alt="Three stainless steel portafilters filled with whole coffee beans, grinded coffee and cappuccino"
         />
       </section>
@@ -32,24 +32,24 @@ export default function Home() {
       </section>
       <section className="gallery">
         <div className="gallery-container">
-          <img src="./public/assets/images/unsplash2.jpg" alt="" />
-          <img src="public/assets/images/unsplash3.jpg" alt="" />
-          <img src="public/assets/images/unsplash4.jpg" alt="" />
-          <img src="public/assets/images/unsplash27.jpg" alt="" />
-          <img src="public/assets/images/unsplash6.jpg" alt="" />
-          <img src="public/assets/images/unsplash28.jpg" alt="" />
-          <img src="public/assets/images/unsplash16.jpg" alt="" />
-          <img src="public/assets/images/unsplash19.jpg" alt="" />
-          <img src="public/assets/images/unsplash11.jpg" alt="" />
-          <img src="public/assets/images/unsplash20.jpg" alt="" />
-          <img src="public/assets/images/unsplash23.jpg" alt="" />
-          <img src="public/assets/images/unsplash12.jpg" alt="" />
-          <img src="public/assets/images/unsplash10.jpg" alt="" />
-          <img src="public/assets/images/unsplash7.jpg" alt="" />
-          <img src="public/assets/images/unsplash26.jpg" alt="" />
-          <img src="public/assets/images/unsplash5.jpg" alt="" />
-          <img src="public/assets/images/unsplash17.jpg" alt="" />
-          <img src="public/assets/images/unsplash18.jpg" alt="" />
+          <img src="assets/images/unsplash2.jpg" alt="" />
+          <img src="assets/images/unsplash3.jpg" alt="" />
+          <img src="assets/images/unsplash4.jpg" alt="" />
+          <img src="assets/images/unsplash27.jpg" alt="" />
+          <img src="assets/images/unsplash6.jpg" alt="" />
+          <img src="assets/images/unsplash28.jpg" alt="" />
+          <img src="assets/images/unsplash16.jpg" alt="" />
+          <img src="assets/images/unsplash19.jpg" alt="" />
+          <img src="assets/images/unsplash11.jpg" alt="" />
+          <img src="assets/images/unsplash20.jpg" alt="" />
+          <img src="assets/images/unsplash23.jpg" alt="" />
+          <img src="assets/images/unsplash12.jpg" alt="" />
+          <img src="assets/images/unsplash10.jpg" alt="" />
+          <img src="assets/images/unsplash7.jpg" alt="" />
+          <img src="assets/images/unsplash26.jpg" alt="" />
+          <img src="assets/images/unsplash5.jpg" alt="" />
+          <img src="assets/images/unsplash17.jpg" alt="" />
+          <img src="assets/images/unsplash18.jpg" alt="" />
         </div>
       </section>
       <section className="location-and-hours">
