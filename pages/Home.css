@@ -27,6 +27,11 @@ p {
   margin-bottom: 8rem;
 }
 
+.location-and-hours-details {
+  display: grid;
+  gap: 1rem;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }

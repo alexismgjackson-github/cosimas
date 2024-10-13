@@ -67,6 +67,7 @@ export default function Header() {
                 aria-label="Open or close hamburger menu"
               />
             </button>
+
             {toggle ? (
               <div className="hamburger-overlay">
                 <div className="hamburger-content">
@@ -90,10 +91,8 @@ export default function Header() {
                   </NavLink>
                 </div>
               </div>
-            ) : (
-              <></>
-            )}
-          </div>
+            ) : null}
+          </div>{" "}
         </div>
       </nav>
     </header>

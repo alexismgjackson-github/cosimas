@@ -31,11 +31,10 @@ export default function Footer() {
         </div>
 
         <div className="footer-secondary">
-          <h2>Cosima's Newsletter</h2>
+          <h2>Newsletter</h2>
           <div className="newsletter-container">
             <p className="newsletter-text">
-              Be the first to know about all things Cosima's, <br /> including
-              events, limited run items and sales.
+              Be the first to know about all things Cosima's
             </p>
             <form className="newsletter-form">
               <input

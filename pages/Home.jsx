@@ -54,13 +54,12 @@ export default function Home() {
       </section>
       <section className="location-and-hours">
         <h1>Location & Hours</h1>
-        <p>324321 Niehaus Drive</p>
-        <br />
-        <p>Seattle WA</p>
-        <br />
-        <p>Weekdays: 7:00am - 5:00pm</p>
-        <br />
-        <p>Weekends: 8:00am - 5:00pm</p>
+        <ul className="location-and-hours-details">
+          <li>324321 Niehaus Drive</li>
+          <li>Seattle WA</li>
+          <li>Weekdays: 7:00am - 5:00pm</li>
+          <li>Weekends: 8:00am - 5:00pm</li>
+        </ul>
       </section>
     </>
   );
