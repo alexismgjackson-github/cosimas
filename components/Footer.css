@@ -21,10 +21,6 @@ h2,
   color: var(--color-light);
 }
 
-.footer-links {
-  margin-bottom: 2rem;
-}
-
 .footer-link {
   color: var(--color-light);
   text-decoration: underline;
@@ -81,6 +77,10 @@ h2,
     align-items: center;
     display: flex;
     justify-content: space-between;
+  }
+
+  .footer-links {
+    margin-bottom: 2rem;
   }
 
   .footer-copyright {
