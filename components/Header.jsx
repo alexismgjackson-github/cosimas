@@ -9,10 +9,12 @@ export default function Header() {
     textDecoration: "underline",
   };
 
-  const [toggle, setToggle] = useState(false);
+  /* const [toggle, setToggle] = useState(false); */
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
-    setToggle(!toggle);
+    /* setToggle(!toggle); */
+    isOpen === true ? setIsOpen(false) : setIsOpen(true);
   };
 
   return (
@@ -64,34 +66,45 @@ export default function Header() {
               <img
                 src="assets/icons/hamburger.svg"
                 alt="Hamburger menu icon"
-                aria-label="Open or close hamburger menu"
+                aria-label="Open hamburger menu"
               />
             </button>
-
-            {toggle ? (
-              <div className="hamburger-overlay">
-                <div className="hamburger-content">
-                  <NavLink
-                    to="/"
-                    style={({ isActive }) => (isActive ? activeStyle : null)}
-                  >
-                    Home
-                  </NavLink>
-                  <NavLink
-                    to="/menu"
-                    style={({ isActive }) => (isActive ? activeStyle : null)}
-                  >
-                    Menu
-                  </NavLink>
-                  <NavLink
-                    to="/contact"
-                    style={({ isActive }) => (isActive ? activeStyle : null)}
-                  >
-                    Contact
-                  </NavLink>
-                </div>
+            <div
+              className={`hamburger-overlay ${
+                isOpen == true ? "show" : "hide"
+              } `}
+            >
+              <div className="hamburger-header">
+                <button className="close-hamburger-btn" onClick={handleClick}>
+                  <img
+                    src="assets/icons/close.svg"
+                    alt="Close menu icon"
+                    aria-label="Close hamburger menu"
+                  />
+                </button>
               </div>
-            ) : null}
+              <div className="hamburger-content">
+                <NavLink
+                  to="/"
+                  style={({ isActive }) => (isActive ? activeStyle : null)}
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  to="/menu"
+                  style={({ isActive }) => (isActive ? activeStyle : null)}
+                >
+                  Menu
+                </NavLink>
+                <NavLink
+                  to="/contact"
+                  style={({ isActive }) => (isActive ? activeStyle : null)}
+                >
+                  Contact
+                </NavLink>
+              </div>
+            </div>
+            {/* ) : null} */}
           </div>{" "}
         </div>
       </nav>

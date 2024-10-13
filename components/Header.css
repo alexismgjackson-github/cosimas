@@ -30,13 +30,19 @@ header {
   border-style: none;
 }
 
+.close-hamburger-btn {
+  background-color: inherit;
+  border-style: none;
+  margin: 2rem;
+}
+
 .hamburger-overlay {
   background-color: var(--color-extrabold);
   height: 100%;
   left: 0;
   position: fixed;
   top: 0;
-  width: 85%;
+  width: 100%;
   z-index: 1;
 }
 
@@ -54,6 +60,14 @@ header {
   color: var(--color-light);
   font-size: 2.2rem;
   text-transform: uppercase;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
