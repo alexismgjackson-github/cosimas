@@ -9,11 +9,9 @@ export default function Header() {
     textDecoration: "underline",
   };
 
-  /* const [toggle, setToggle] = useState(false); */
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
-    /* setToggle(!toggle); */
     isOpen === true ? setIsOpen(false) : setIsOpen(true);
   };
 
@@ -87,24 +85,26 @@ export default function Header() {
                 <NavLink
                   to="/"
                   style={({ isActive }) => (isActive ? activeStyle : null)}
+                  onClick={handleClick}
                 >
                   Home
                 </NavLink>
                 <NavLink
                   to="/menu"
                   style={({ isActive }) => (isActive ? activeStyle : null)}
+                  onClick={handleClick}
                 >
                   Menu
                 </NavLink>
                 <NavLink
                   to="/contact"
                   style={({ isActive }) => (isActive ? activeStyle : null)}
+                  onClick={handleClick}
                 >
                   Contact
                 </NavLink>
               </div>
             </div>
-            {/* ) : null} */}
           </div>{" "}
         </div>
       </nav>
