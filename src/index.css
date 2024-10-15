@@ -57,6 +57,11 @@ label {
   font-size: 1.8rem;
 }
 
+input,
+textarea {
+  font-family: var(--font-primary);
+}
+
 p {
   font-weight: 500;
   line-height: 2.8rem;

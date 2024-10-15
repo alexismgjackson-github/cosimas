@@ -49,6 +49,18 @@ h2,
   max-width: 35rem;
 }
 
+.newsletter-message {
+  font-size: 1.4rem;
+}
+
+.success {
+  color: lightgreen;
+}
+
+.error {
+  color: red;
+}
+
 .newsletter-btn {
   background-color: var(--color-medium);
   border-radius: 2.5rem;
