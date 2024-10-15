@@ -52,7 +52,8 @@ button,
 label,
 select,
 textarea,
-ul {
+ul,
+label {
   font-size: 1.8rem;
 }
 

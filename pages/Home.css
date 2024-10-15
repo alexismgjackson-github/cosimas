@@ -1,3 +1,8 @@
+.home-container {
+  display: grid;
+  gap: 8rem;
+}
+
 h1,
 p {
   color: var(--color-extrabold);
@@ -20,7 +25,7 @@ p {
 
 .gallery-container {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .location-and-hours {
@@ -32,14 +37,6 @@ p {
   gap: 1rem;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .gallery-container {
@@ -49,6 +46,10 @@ p {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .home-container {
+    gap: 15rem;
+  }
+
   .hero-img {
     padding: 5rem 10rem 2rem 10rem;
   }
@@ -72,8 +73,4 @@ p {
   .location-and-hours {
     margin-bottom: 15rem;
   }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 }

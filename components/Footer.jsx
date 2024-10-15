@@ -8,22 +8,38 @@ export default function Footer() {
           <h2>Social</h2>
           <ul className="footer-links">
             <li>
-              <a href="#" className="footer-link">
+              <a
+                href="https://www.instagram.com/?hl=en"
+                target={"_blank"}
+                className="footer-link"
+              >
                 Instagram
               </a>
             </li>
             <li>
-              <a href="#" className="footer-link">
+              <a
+                href="https://www.facebook.com/18thStpilsen/"
+                target={"_blank"}
+                className="footer-link"
+              >
                 Facebook
               </a>
             </li>
             <li>
-              <a href="#" className="footer-link">
+              <a
+                href="https://x.com/?lang=en"
+                target={"_blank"}
+                className="footer-link"
+              >
                 Twitter
               </a>
             </li>
             <li>
-              <a href="#" className="footer-link">
+              <a
+                href="https://open.spotify.com/"
+                target={"_blank"}
+                className="footer-link"
+              >
                 Spotify
               </a>
             </li>
@@ -39,17 +55,17 @@ export default function Footer() {
             <form className="newsletter-form">
               <input
                 className="newsletter-input"
-                type="text"
+                type={"email"}
                 placeholder="Your email"
               />
-              <button className="newsletter-btn">Submit</button>
+              <button className="newsletter-btn">Sign Up</button>
             </form>
           </div>
         </div>
       </div>
 
       <div className="footer-copyright">
-        <p>© 2024 Cosima's. All rights reserved.</p>
+        <p>© 2024 Cosima's Coffee. All rights reserved.</p>
       </div>
     </footer>
   );

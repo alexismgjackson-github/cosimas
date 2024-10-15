@@ -3,7 +3,9 @@ import "./Checkout.css";
 export default function Checkout() {
   return (
     <>
-      <p>Checkout Page</p>
+      <div className="checkout-container">
+        <h1>Checkout</h1>
+      </div>
     </>
   );
 }

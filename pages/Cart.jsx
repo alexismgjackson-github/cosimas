@@ -3,7 +3,9 @@ import "./Cart.css";
 export default function Cart() {
   return (
     <>
-      <p>Cart Page</p>
+      <div className="cart-container">
+        <h1>Cart</h1>
+      </div>
     </>
   );
 }

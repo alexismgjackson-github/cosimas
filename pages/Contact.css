@@ -1,3 +1,64 @@
+.contact-container {
+  display: grid;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.contact-info {
+  display: grid;
+  gap: 6rem;
+}
+
+.phone-and-email {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+label {
+  color: var(--color-extrabold);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  border: 1.5px solid var(--color-extrabold);
+  padding: 1.5rem;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid var(--color-medium);
+  outline: none;
+}
+
+.contact-btn {
+  background-color: var(--color-medium);
+  border-radius: 2.5rem;
+  border-style: none;
+  color: var(--color-light);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  width: 20rem;
+}
+
+.contact-btn:hover {
+  opacity: 0.65;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
@@ -12,6 +73,9 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .contact-container {
+    padding: 4rem 15rem;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
