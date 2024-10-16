@@ -28,17 +28,13 @@ label {
 
 input,
 textarea {
-  border: 1.5px solid var(--color-extrabold);
+  border: 2px solid var(--color-extrabold);
   padding: 1.5rem;
   width: 100%;
 }
 
-textarea {
-  resize: none;
-}
-
-input:focus,
-textarea:focus {
+.contact-form-input:focus,
+.contact-form-textarea:focus {
   border: 2px solid var(--color-medium);
   outline: none;
 }

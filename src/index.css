@@ -30,7 +30,8 @@ body {
 h1,
 h2,
 h3 {
-  font-family: var(--font-secondary);
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -60,6 +61,10 @@ label {
 input,
 textarea {
   font-family: var(--font-primary);
+}
+
+textarea {
+  resize: none;
 }
 
 p {

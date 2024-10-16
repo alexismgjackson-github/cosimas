@@ -67,7 +67,7 @@ export default function Contact() {
               />
               <label htmlFor="">Message (required)</label>
               <textarea
-                id="contact-form-textarea"
+                className="contact-form-textarea"
                 cols="30"
                 rows="10"
                 onChange={handleChange}

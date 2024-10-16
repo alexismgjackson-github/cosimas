@@ -31,7 +31,7 @@ export default function Footer() {
       formData.email = "";
     } else {
       console.log("Email is invalid");
-      setError("Valid email is required");
+      setError("Valid email is required. Try again.");
       setIsValid(false);
     }
   }
