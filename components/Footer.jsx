@@ -6,7 +6,7 @@ export default function Footer() {
   const [formData, setFormData] = useState({
     email: "",
   });
-  const [error, setError] = useState("");
+  const [emailMessage, setEmailMessage] = useState("");
   const [isValid, setIsValid] = useState(null);
 
   function handleChange(event) {
@@ -26,17 +26,17 @@ export default function Footer() {
 
     if (formData.email.length > 0 && emailIsValid(formData.email)) {
       console.log("Email is valid");
-      setError("Thank you for subscribing!");
+      setEmailMessage("Thank you for subscribing!");
       setIsValid(true);
       formData.email = "";
     } else {
       console.log("Email is invalid");
-      setError("Valid email is required. Try again.");
+      setEmailMessage("Error: Please enter a valid email.");
       setIsValid(false);
     }
   }
 
-  console.log(formData);
+  // console.log(formData);
 
   return (
     <footer>
@@ -90,19 +90,19 @@ export default function Footer() {
               Be the first to know about all things Cosima's
             </p>
             <form className="newsletter-form" onSubmit={handleSubmit}>
-              {error && (
+              {emailMessage && (
                 <span
                   className={`newsletter-message ${
-                    isValid == true ? "success" : "error"
+                    isValid == true ? "footer-success" : "footer-error"
                   }`}
                 >
-                  {error}
+                  {emailMessage}
                 </span>
               )}
               <input
                 className="newsletter-input"
                 type={"email"}
-                placeholder="Your email"
+                placeholder="Type email here..."
                 name="email"
                 onChange={handleChange}
                 value={formData.email}

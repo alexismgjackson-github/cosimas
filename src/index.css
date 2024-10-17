@@ -1,7 +1,7 @@
 :root {
   --font-primary: "Manrope", sans-serif;
   --font-secondary: "Bowlby One SC", sans-serif;
-  --color-light: #fefefa;
+  --color-light: /* #fefefa; */ #f5f5f0;
   --color-medium: #f5a56c;
   --color-bold: #00312f;
   --color-extrabold: #33281f;

@@ -39,6 +39,24 @@ textarea {
   outline: none;
 }
 
+.contact-success {
+  background-color: green;
+  border: 1px solid green;
+  color: white;
+  font-size: 1.4rem;
+  max-width: fit-content;
+  padding: 1rem;
+}
+
+.contact-error {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+  font-size: 1.4rem;
+  max-width: fit-content;
+  padding: 1rem;
+}
+
 .contact-btn {
   background-color: var(--color-medium);
   border-radius: 2.5rem;
