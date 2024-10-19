@@ -1,7 +1,50 @@
 .menu-container {
   display: grid;
-  gap: 2rem;
+  gap: 6rem;
   padding: 4rem 2rem;
+}
+
+.quick-drinks,
+.specialty-drinks,
+.pastries {
+  display: grid;
+  gap: 2rem;
+}
+
+.menu-item {
+  background-color: white;
+  border: 1.5px solid gray;
+  border-radius: 0.5rem;
+  display: grid;
+  padding: 2rem;
+  gap: 1rem;
+  width: 100%;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.menu-item-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item-name,
+.menu-item-price,
+.menu-item-description {
+  font-size: 1.6rem;
+}
+
+.menu-item-name {
+  font-weight: 900;
+}
+
+.menu-item-price {
+  color: var(--color-medium);
+  font-weight: 500;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -14,12 +57,21 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .menu-container {
+    padding: 6rem 15rem;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .menu-container {
-    padding: 4rem 15rem;
+    padding: 8rem 15rem;
+  }
+
+  .quick-drinks,
+  .specialty-drinks,
+  .pastries {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

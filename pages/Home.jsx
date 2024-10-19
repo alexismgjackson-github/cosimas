@@ -25,10 +25,10 @@ export default function Home() {
           <h1>Our Coffee</h1>
           <p>
             Cosima's currently partners with small coffee producers across
-            Kenya, and Rwanda, from which we source beans used in our single
-            origins and/or blends. We hand-pick the very best lots of the season
-            - all with the singular purpose to be enjoyed by you. Our delicious
-            coffee in roasted on location.
+            Kenya, from which we source beans used in our single origins and/or
+            blends. We hand-pick the very best lots of the season - all with the
+            singular purpose to be enjoyed by you. Our delicious coffee in
+            roasted on location.
           </p>
         </section>
         <section className="gallery">
