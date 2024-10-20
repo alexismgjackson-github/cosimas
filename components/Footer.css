@@ -2,13 +2,13 @@ footer {
   background-color: var(--color-bold);
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-  padding: 2rem;
+  gap: 8rem;
+  padding: 4rem 2rem;
 }
 
 .footer-links-and-form {
   display: grid;
-  gap: 5rem;
+  gap: 8rem;
 }
 
 h2 {
@@ -44,7 +44,7 @@ h2,
 }
 
 .newsletter-input {
-  border: 2px solid gray;
+  border: 2px solid lightgray;
   padding: 1.5rem;
   max-width: 35rem;
 }

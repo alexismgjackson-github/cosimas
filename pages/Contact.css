@@ -28,7 +28,7 @@ label {
 
 input,
 textarea {
-  border: 2px solid var(--color-extrabold);
+  border: 2px solid gray;
   padding: 1.5rem;
   width: 100%;
 }

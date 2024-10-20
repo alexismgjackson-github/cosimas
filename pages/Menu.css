@@ -13,7 +13,7 @@
 
 .menu-item {
   background-color: white;
-  border: 1.5px solid gray;
+  border: 1.5px solid lightgray;
   border-radius: 0.5rem;
   display: grid;
   padding: 2rem;
@@ -38,13 +38,13 @@
   font-size: 1.6rem;
 }
 
-.menu-item-name {
+.menu-item-name,
+.menu-item-price {
   font-weight: 900;
 }
 
 .menu-item-price {
   color: var(--color-medium);
-  font-weight: 500;
 }
 
 /* Extra small devices (phones, 600px and down) */
