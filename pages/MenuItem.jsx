@@ -1,13 +1,17 @@
 import "./MenuItem.css";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MenuItemDetails from "./MenuItemDetails";
 
 export default function MenuItem(item) {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "unset";
+  }, [isOpen]);
+
   const handleClick = () => {
-    isOpen === true ? setIsOpen(false) : setIsOpen(true);
+    isOpen ? setIsOpen(false) : setIsOpen(true);
   };
 
   return (

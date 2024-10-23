@@ -34,12 +34,12 @@
   color: var(--color-medium);
 }
 
-.menu-item-modal {
+.menu-item-modal-container {
   background-color: var(--color-light);
-  border: 1px solid var(--color-extrabold);
+  border: 10px solid lightgray;
   height: 100%;
   left: 0;
-  overflow-y: auto;
+  overflow-y: scroll;
   position: fixed;
   top: 0%;
   width: 100%;
@@ -62,6 +62,12 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .menu-item-modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
