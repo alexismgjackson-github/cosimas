@@ -13,6 +13,13 @@ export default function Menu() {
       <div className="menu-container">
         <h1 className="menu-heading">Our Menu</h1>
         <div className="menu-items">{menuElements}</div>
+        <div className="disclaimer-container">
+          <p className="menu-disclaimer">
+            ***Please be aware that our food may contain or come into contact
+            with common allergens, such as peanuts, tree nuts, soy, dairy, eggs,
+            sesame and wheat.
+          </p>
+        </div>
       </div>
     </>
   );
