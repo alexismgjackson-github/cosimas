@@ -1,6 +1,76 @@
 export default [
   {
     id: 1,
+    name: "Drip Coffee",
+    price: 3.25,
+    description: "Drip brewed coffee. Less robust and smooth-tasting.",
+    size: [
+      {
+        name: "Regular",
+        addPrice: 0,
+      },
+      {
+        name: "Large",
+        addPrice: 0.75,
+      },
+    ],
+    caffeine: [
+      {
+        name: "Single Shot",
+        addPrice: 0,
+      },
+      {
+        name: "Double Shot",
+        addPrice: 1.5,
+      },
+      {
+        name: "Triple Shot",
+        addPrice: 1.5,
+      },
+    ],
+    milk: [
+      {
+        name: "Whole",
+        addPrice: 0,
+      },
+      {
+        name: "Almond",
+        addPrice: 0.75,
+      },
+      {
+        name: "Oat",
+        addPrice: 0.75,
+      },
+    ],
+    syrup: [
+      {
+        name: "No Syrup",
+        addPrice: 0,
+      },
+      {
+        name: "Simple Syrup",
+        addPrice: 0,
+      },
+      {
+        name: "Vanilla",
+        addPrice: 0.75,
+      },
+      {
+        name: "Caramel",
+        addPrice: 0.75,
+      },
+      {
+        name: "Hazelnut",
+        addPrice: 0.75,
+      },
+      {
+        name: "Mocha",
+        addPrice: 0.75,
+      },
+    ],
+  },
+  {
+    id: 2,
     name: "Iced Coffee",
     price: 3.25,
     description: "Drip brewed coffee over ice. Refreshing and smooth-tasting.",
@@ -70,10 +140,10 @@ export default [
     ],
   },
   {
-    id: 2,
-    name: "Drip Coffee",
+    id: 3,
+    name: "Americano",
     price: 3.25,
-    description: "Drip brewed coffee. Less robust and smooth-tasting.",
+    description: "Espresso in hot water. Rich, full flavour.",
     size: [
       {
         name: "Regular",
@@ -84,6 +154,16 @@ export default [
         addPrice: 0.75,
       },
     ],
+    temperature: [
+      {
+        name: "Hot",
+        addPrice: 0,
+      },
+      {
+        name: "Iced",
+        addPrice: 0,
+      },
+    ],
     caffeine: [
       {
         name: "Single Shot",
@@ -91,7 +171,7 @@ export default [
       },
       {
         name: "Double Shot",
-        addPrice: 1.5,
+        addPrice: 1,
       },
       {
         name: "Triple Shot",
@@ -112,36 +192,54 @@ export default [
         addPrice: 0.75,
       },
     ],
-    syrup: [
+  },
+  {
+    id: 4,
+    name: "Cortado",
+    price: 3.75,
+    description:
+      "Small amount of boiled milk and a thin layer of milk foam on top of a shot of espresso. Balanced, smooth flavour and creamy, velvety texture.",
+    size: [
       {
-        name: "No Syrup",
+        name: "Regular",
         addPrice: 0,
       },
       {
-        name: "Simple Syrup",
+        name: "Large",
+        addPrice: 0.75,
+      },
+    ],
+    caffeine: [
+      {
+        name: "Single Shot",
         addPrice: 0,
       },
       {
-        name: "Vanilla",
+        name: "Double Shot",
+        addPrice: 1,
+      },
+      {
+        name: "Triple Shot",
+        addPrice: 1.5,
+      },
+    ],
+    milk: [
+      {
+        name: "Whole",
+        addPrice: 0,
+      },
+      {
+        name: "Almond",
         addPrice: 0.75,
       },
       {
-        name: "Caramel",
-        addPrice: 0.75,
-      },
-      {
-        name: "Hazelnut",
-        addPrice: 0.75,
-      },
-      {
-        name: "Mocha",
+        name: "Oat",
         addPrice: 0.75,
       },
     ],
   },
-
   {
-    id: 3,
+    id: 5,
     name: "Latte",
     price: 4.25,
     description:
@@ -222,110 +320,11 @@ export default [
     ],
   },
   {
-    id: 4,
-    name: "Americano",
-    price: 3.25,
-    description: "Espresso in hot water. Rich, full flavour.",
-    size: [
-      {
-        name: "Regular",
-        addPrice: 0,
-      },
-      {
-        name: "Large",
-        addPrice: 0.75,
-      },
-    ],
-    temperature: [
-      {
-        name: "Hot",
-        addPrice: 0,
-      },
-      {
-        name: "Iced",
-        addPrice: 0,
-      },
-    ],
-    caffeine: [
-      {
-        name: "Single Shot",
-        addPrice: 0,
-      },
-      {
-        name: "Double Shot",
-        addPrice: 1,
-      },
-      {
-        name: "Triple Shot",
-        addPrice: 1.5,
-      },
-    ],
-    milk: [
-      {
-        name: "Whole",
-        addPrice: 0,
-      },
-      {
-        name: "Almond",
-        addPrice: 0.75,
-      },
-      {
-        name: "Oat",
-        addPrice: 0.75,
-      },
-    ],
-  },
-  {
-    id: 5,
+    id: 6,
     name: "Cappuccino",
     price: 4.25,
     description:
       "Equal parts espresso, steamed milk, and foam. Rich, creamy texture, and robust and bold flavour.",
-    size: [
-      {
-        name: "Regular",
-        addPrice: 0,
-      },
-      {
-        name: "Large",
-        addPrice: 0.75,
-      },
-    ],
-    caffeine: [
-      {
-        name: "Single Shot",
-        addPrice: 0,
-      },
-      {
-        name: "Double Shot",
-        addPrice: 1,
-      },
-      {
-        name: "Triple Shot",
-        addPrice: 1.5,
-      },
-    ],
-    milk: [
-      {
-        name: "Whole",
-        addPrice: 0,
-      },
-      {
-        name: "Almond",
-        addPrice: 0.75,
-      },
-      {
-        name: "Oat",
-        addPrice: 0.75,
-      },
-    ],
-  },
-  {
-    id: 6,
-    name: "Cortado",
-    price: 3.75,
-    description:
-      "Small amount of boiled milk and a thin layer of milk foam on top of a shot of espresso. Balanced, smooth flavour and creamy, velvety texture.",
     size: [
       {
         name: "Regular",
@@ -436,7 +435,6 @@ export default [
       },
     ],
   },
-
   {
     id: 8,
     name: "Bagel",

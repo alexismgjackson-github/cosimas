@@ -12,7 +12,7 @@
 }
 
 .menu-item-modal-heading {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   margin-bottom: 0rem;
 }
 
@@ -22,8 +22,13 @@
   font-weight: 900;
 }
 
+.menu-item-modal-description {
+  font-size: 1.6rem;
+}
+
 .decorative-break {
   border: 8px solid lightgray;
+  width: 100%;
 }
 
 .menu-item-modal-content {
@@ -47,6 +52,11 @@ legend {
   font-weight: 700;
 }
 
+.radio-container {
+  align-items: center;
+  display: flex;
+}
+
 input[type="radio"],
 label {
   width: fit-content;
@@ -56,9 +66,27 @@ input[type="radio"] {
   margin-right: 1rem;
 }
 
-.radio-container {
-  align-items: center;
+input[type="radio"]:hover {
+  cursor: pointer;
+}
+
+.menu-item-modal-btn {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-cart-btn {
+  background-color: var(--color-bold);
+  border-radius: 4rem;
+  color: var(--color-extralight);
+  border-style: none;
+  font-weight: 500;
+  padding: 1.5rem 6rem;
+}
+
+.add-to-cart-btn:hover {
+  background-color: var(--color-medium);
 }
 
 /* Extra small devices (phones, 600px and down) */

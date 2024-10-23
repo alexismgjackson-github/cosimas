@@ -36,71 +36,92 @@ export default function Home() {
             <img
               src="assets/images/unsplash2.jpg"
               alt="A hand holding a beautifully designed cappuccino in a white mug"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash3.jpg"
               alt="A person wearing a black shirt pouring black coffee from a glass pitcher into a white mug on a wooden table"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash4.jpg"
               alt="A person wearing a navy blue shirt holding a beautifully designed latte in white paper cup"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash27.jpg"
               alt="Whole coffee beans in a clear container"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash6.jpg"
               alt="Milk swirling in a black iced coffee in a clear plastic cup"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash28.jpg"
               alt="Espresso pouring from an espresso machine into a glass cup"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash16.jpg"
               alt="A person holding two portafilters - one filled with grinded coffee and the other has whole coffee beans"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash19.jpg"
               alt="Espresso pouring from an espresso machine into a black mug"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash11.jpg"
               alt="Greenery wall with pink fluorescent sign reading 'But first coffee'"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash20.jpg"
               alt="A person wearing a white shirt pouring steamed milk from a stainless steel pitcher into a white mug to make a beautifully designed latte"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash23.jpg"
               alt="White and black sign reading 'Coffee' with city building in the background"
+              loading="lazy"
             />
-            <img src="assets/images/unsplash12.jpg" alt="Whole coffee beans" />
+            <img
+              src="assets/images/unsplash12.jpg"
+              alt="Whole coffee beans"
+              loading="lazy"
+            />
             <img
               src="assets/images/unsplash10.jpg"
               alt="A person wearing an apron pouring steamed milk from a stainless steel pitcher into a brown paper cup to make a beautifully designed latte"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash7.jpg"
               alt="Espresso pouring from an espresso machine into a white mug"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash26.jpg"
               alt="Iced latte in a glass cup on a wooden table"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash5.jpg"
               alt="Diedrich coffee roaster filled with whole coffee beans"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash17.jpg"
               alt="Iced americano in a glass cup on a wooden table"
+              loading="lazy"
             />
             <img
               src="assets/images/unsplash18.jpg"
               alt="Outside view of coffee shop's large window with a sign reading 'Thank you for supporting your local coffee shop - every cup made fresh"
+              loading="lazy"
             />
           </div>
         </section>

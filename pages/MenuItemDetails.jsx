@@ -412,7 +412,9 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
               </div>
             </fieldset>
           )}
-          <br />
+          <div className="menu-item-modal-btn">
+            <button className="add-to-cart-btn">Add To Cart</button>
+          </div>
         </form>
       </div>
     </div>

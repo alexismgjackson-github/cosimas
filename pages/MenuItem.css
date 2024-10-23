@@ -34,8 +34,9 @@
   color: var(--color-medium);
 }
 
-.menu-item-modal-container {
+.menu-item-modal {
   background-color: var(--color-light);
+  border: 1px solid var(--color-extrabold);
   height: 100%;
   left: 0;
   overflow-y: auto;
