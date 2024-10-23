@@ -459,11 +459,11 @@ export default [
       },
       {
         name: "Blueberry",
-        addPrice: 0,
+        addPrice: 0.75,
       },
       {
         name: "Cinnamon Crunch",
-        addPrice: 0,
+        addPrice: 0.75,
       },
     ],
   },
@@ -479,7 +479,7 @@ export default [
       },
       {
         name: "Blueberry",
-        addPrice: 0,
+        addPrice: 0.75,
       },
       {
         name: "Banana Nut",
@@ -487,11 +487,11 @@ export default [
       },
       {
         name: "Lemon Poppyseed",
-        addPrice: 0,
+        addPrice: 0.75,
       },
       {
         name: "Pumpkin",
-        addPrice: 0,
+        addPrice: 0.75,
       },
     ],
   },
@@ -506,7 +506,7 @@ export default [
         addPrice: 0,
       },
       {
-        name: "Chocolate",
+        name: "Chocolate (+$0.75)",
         addPrice: 0,
       },
     ],

@@ -273,7 +273,7 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                   onChange={handleChange}
                   checked={formData.muffinflavor === "Blueberry"}
                 />
-                <label htmlFor="Blueberry">Blueberry</label>
+                <label htmlFor="Blueberry">Blueberry (+$0.75)</label>
               </div>
               <div className="radio-container">
                 <input
@@ -295,7 +295,9 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                   onChange={handleChange}
                   checked={formData.muffinflavor === "Lemon Poppyseed"}
                 />
-                <label htmlFor="Lemon Poppyseed">Lemon Poppyseed</label>
+                <label htmlFor="Lemon Poppyseed">
+                  Lemon Poppyseed (+$0.75)
+                </label>
               </div>
               <div className="radio-container">
                 <input
@@ -306,7 +308,7 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                   onChange={handleChange}
                   checked={formData.muffinflavor === "Pumpkin"}
                 />
-                <label htmlFor="Pumpkin">Pumpkin</label>
+                <label htmlFor="Pumpkin">Pumpkin (+$0.75)</label>
               </div>
             </fieldset>
           )}
@@ -314,6 +316,7 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
           {item.bagelflavor && (
             <fieldset>
               <legend>Flavor (required)</legend>
+              <br />
               <div className="radio-container">
                 <br />
                 <input
@@ -368,7 +371,7 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                   onChange={handleChange}
                   checked={formData.bagelflavor === "Blueberry"}
                 />
-                <label htmlFor="Blueberry">Blueberry</label>
+                <label htmlFor="Blueberry">Blueberry (+$0.75)</label>
               </div>
               <div className="radio-container">
                 <input
@@ -379,7 +382,9 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                   onChange={handleChange}
                   checked={formData.bagelflavor === "Cinnamon Crunch"}
                 />
-                <label htmlFor="Cinnamon Crunch">Cinnamon Crunch</label>
+                <label htmlFor="Cinnamon Crunch">
+                  Cinnamon Crunch (+$0.75)
+                </label>
               </div>
             </fieldset>
           )}
@@ -408,7 +413,7 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                   onChange={handleChange}
                   checked={formData.croissantflavor === "Chocolate"}
                 />
-                <label htmlFor="Chocolate">Chocolate</label>
+                <label htmlFor="Chocolate">Chocolate (+$0.75)</label>
               </div>
             </fieldset>
           )}
