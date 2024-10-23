@@ -35,14 +35,14 @@ textarea {
 
 .contact-form-input:focus,
 .contact-form-textarea:focus {
-  border: 2px solid var(--color-medium);
+  border: 1px solid var(--color-medium);
   outline: none;
 }
 
 .contact-success {
   background-color: green;
   border: 1px solid green;
-  color: white;
+  color: var(--color-extralight);
   font-size: 1.4rem;
   max-width: fit-content;
   padding: 1rem;
@@ -51,7 +51,7 @@ textarea {
 .contact-error {
   background-color: red;
   border: 1px solid red;
-  color: white;
+  color: var(--color-extralight);
   font-size: 1.4rem;
   max-width: fit-content;
   padding: 1rem;

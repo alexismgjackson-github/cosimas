@@ -62,7 +62,7 @@ h2,
 .footer-success {
   background-color: green;
   border: 1px solid green;
-  color: white;
+  color: var(--color-extralight);
   font-size: 1.4rem;
   max-width: fit-content;
   padding: 1rem;
@@ -71,7 +71,7 @@ h2,
 .footer-error {
   background-color: red;
   border: 1px solid red;
-  color: white;
+  color: var(--color-extralight);
   font-size: 1.4rem;
   max-width: fit-content;
   padding: 1rem;

@@ -1,50 +1,14 @@
 .menu-container {
-  display: grid;
-  gap: 6rem;
   padding: 4rem 2rem;
 }
 
-.quick-drinks,
-.specialty-drinks,
-.pastries {
+.menu-heading {
+  margin-bottom: 4rem;
+}
+
+.menu-items {
   display: grid;
-  gap: 2rem;
-}
-
-.menu-item {
-  background-color: white;
-  border: 1.5px solid lightgray;
-  border-radius: 0.5rem;
-  display: grid;
-  padding: 2rem;
-  gap: 1rem;
-  width: 100%;
-}
-
-.menu-item:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-.menu-item-header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu-item-name,
-.menu-item-price,
-.menu-item-description {
-  font-size: 1.6rem;
-}
-
-.menu-item-name,
-.menu-item-price {
-  font-weight: 900;
-}
-
-.menu-item-price {
-  color: var(--color-medium);
+  gap: 2.5rem;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -68,9 +32,7 @@
     padding: 8rem 15rem;
   }
 
-  .quick-drinks,
-  .specialty-drinks,
-  .pastries {
+  .menu-items {
     grid-template-columns: 1fr 1fr;
   }
 }

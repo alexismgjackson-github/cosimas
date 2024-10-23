@@ -1,6 +1,7 @@
 :root {
   --font-primary: "Manrope", sans-serif;
   --font-secondary: "Bowlby One SC", sans-serif;
+  --color-extralight: #ffffff;
   --color-light: #f5f5f0;
   --color-medium: #f5a56c;
   --color-bold: #00312f;
@@ -83,7 +84,6 @@ a {
 
 button {
   font-weight: 500;
-  transition: 0.35s;
 }
 
 li {
@@ -93,4 +93,16 @@ li {
 
 img {
   width: 100%;
+}
+
+:hover {
+  transition: 0.4s;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }

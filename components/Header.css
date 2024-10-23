@@ -21,13 +21,14 @@ header {
 }
 
 .header-mobile-and-tablet-view {
+  align-items: center;
   display: flex;
-  gap: 2.5rem;
 }
 
 .hamburger-btn {
   background-color: inherit;
   border-style: none;
+  padding-left: 2.5rem;
 }
 
 .close-hamburger-btn {
@@ -62,14 +63,6 @@ header {
   text-transform: uppercase;
 }
 
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .logo {
@@ -98,5 +91,13 @@ header {
 
   .header-desktop-view a {
     color: var(--color-light);
+  }
+
+  .cart-icon {
+    display: flex;
+  }
+
+  .cart-item-count {
+    margin-left: 1rem;
   }
 }

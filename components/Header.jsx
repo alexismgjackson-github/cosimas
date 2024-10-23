@@ -43,6 +43,7 @@ export default function Header() {
           <NavLink
             to="/cart"
             style={({ isActive }) => (isActive ? activeStyle : null)}
+            className="cart-icon"
           >
             Cart
           </NavLink>
@@ -52,6 +53,7 @@ export default function Header() {
           <NavLink
             to="/cart"
             style={({ isActive }) => (isActive ? activeStyle : null)}
+            className="cart-icon"
           >
             <img
               src="assets/icons/cart.svg"
@@ -67,15 +69,11 @@ export default function Header() {
                 aria-label="Open hamburger menu"
               />
             </button>
-            <div
-              className={`hamburger-overlay ${
-                isOpen == true ? "show" : "hide"
-              } `}
-            >
+            <div className={`hamburger-overlay ${isOpen ? "show" : "hide"} `}>
               <div className="hamburger-header">
                 <button className="close-hamburger-btn" onClick={handleClick}>
                   <img
-                    src="assets/icons/close.svg"
+                    src="assets/icons/close-hamburger.svg"
                     alt="Close menu icon"
                     aria-label="Close hamburger menu"
                   />
