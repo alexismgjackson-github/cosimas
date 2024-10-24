@@ -6,13 +6,13 @@ import MenuItemDetails from "./MenuItemDetails";
 export default function MenuItem(item) {
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "unset";
-  }, [isOpen]);
-
   const handleClick = () => {
     isOpen ? setIsOpen(false) : setIsOpen(true);
   };
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "unset";
+  }, [isOpen]);
 
   return (
     <>
@@ -33,7 +33,7 @@ export default function MenuItem(item) {
             aria-label="Close menu item modal"
           />
         </button>
-        <MenuItemDetails onClick={handleClick} {...item} />
+        <MenuItemDetails {...item} />
       </div>
     </>
   );

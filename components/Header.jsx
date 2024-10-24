@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const activeStyle = {
@@ -14,6 +14,10 @@ export default function Header() {
   const handleClick = () => {
     isOpen === true ? setIsOpen(false) : setIsOpen(true);
   };
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "unset";
+  }, [isOpen]);
 
   return (
     <header>

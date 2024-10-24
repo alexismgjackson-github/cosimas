@@ -70,6 +70,19 @@ input[type="radio"]:hover {
   cursor: pointer;
 }
 
+.menu-item-modal-quantity {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 1.5rem;
+}
+
+.menu-item-modal-decrement-btn,
+.menu-item-modal-increment-btn {
+  background-color: lightgray;
+  border-style: none;
+  padding: 1.25rem;
+}
+
 .menu-item-modal-btn {
   display: flex;
   justify-content: center;

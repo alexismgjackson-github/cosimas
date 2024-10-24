@@ -2,12 +2,13 @@ import "./MenuItemDetails.css";
 
 import { useState } from "react";
 
-export default function MenuItemDetails({ open, handleClick, ...item }) {
+export default function MenuItemDetails({ ...item }) {
   const [formData, setFormData] = useState({
     id: item.id,
+    quantity: 1,
     name: item.name,
     price: item.price,
-    description: item.idescription,
+    description: item.description,
     size: "",
     temperature: "",
     caffeine: "",
@@ -15,8 +16,25 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
     syrup: "",
     muffinflavor: "",
     bagelflavor: "",
-    croissantflavor: "",
   });
+
+  function incrementByOne() {
+    setFormData((prevFormData) => {
+      return {
+        ...prevFormData,
+        quantity: prevFormData.quantity + 1,
+      };
+    });
+  }
+
+  function decrementByOne() {
+    setFormData((prevFormData) => {
+      return {
+        ...prevFormData,
+        quantity: prevFormData.quantity - 1,
+      };
+    });
+  }
 
   function handleChange(event) {
     const { name, value, type, checked } = event.target;
@@ -26,6 +44,8 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
         [name]: type === "checkbox" ? checked : value,
       };
     });
+
+    console.log(event.target.value);
   }
 
   return (
@@ -57,12 +77,14 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                 <input
                   name="size"
                   type="radio"
-                  value="Large"
-                  id="Large"
+                  value="Large (16oz) (+$0.75)"
+                  id="Large (16oz) (+$0.75)"
                   onChange={handleChange}
-                  checked={formData.size === "Large"}
+                  checked={formData.size === "Large (16oz) (+$0.75)"}
                 />
-                <label htmlFor="Large">Large (16oz) (+$0.75)</label>
+                <label htmlFor="Large (16oz) (+$0.75)">
+                  Large (16oz) (+$0.75)
+                </label>
               </div>
             </fieldset>
           )}
@@ -115,23 +137,27 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                 <input
                   name="caffeine"
                   type="radio"
-                  value="Double Shot"
-                  id="Double Shot"
+                  value="Double Shot (+$1.25)"
+                  id="Double Shot (+$1.25)"
                   onChange={handleChange}
-                  checked={formData.caffeine === "Double Shot"}
+                  checked={formData.caffeine === "Double Shot (+$1.25)"}
                 />
-                <label htmlFor="Double Shot">Double Shot (+$1.50)</label>
+                <label htmlFor="Double Shot (+$1.25)">
+                  Double Shot (+$1.25)
+                </label>
               </div>
               <div className="radio-container">
                 <input
                   name="caffeine"
                   type="radio"
-                  value="Triple Shot"
-                  id="Triple Shot"
+                  value="Triple Shot (+$1.75)"
+                  id="Triple Shot (+$1.75)"
                   onChange={handleChange}
-                  checked={formData.caffeine === "Triple Shot"}
+                  checked={formData.caffeine === "Triple Shot (+$1.75)"}
                 />
-                <label htmlFor="Triple Shot">Triple Shot (+$1.75)</label>
+                <label htmlFor="Triple Shot (+$1.75)">
+                  Triple Shot (+$1.75)
+                </label>
               </div>
             </fieldset>
           )}
@@ -140,6 +166,17 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
             <fieldset>
               <legend>Milk (required)</legend>
               <br />
+              <div className="radio-container">
+                <input
+                  name="milk"
+                  type="radio"
+                  value="No Milk"
+                  id="No Milk"
+                  onChange={handleChange}
+                  checked={formData.milk === "No Milk"}
+                />
+                <label htmlFor="No Milk">No Milk</label>
+              </div>
               <div className="radio-container">
                 <input
                   name="milk"
@@ -155,23 +192,23 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                 <input
                   name="milk"
                   type="radio"
-                  value="Almond"
-                  id="Almond"
+                  value="Almond (+$0.75)"
+                  id="Almond (+$0.75)"
                   onChange={handleChange}
-                  checked={formData.milk === "Almond"}
+                  checked={formData.milk === "Almond (+$0.75)"}
                 />
-                <label htmlFor="Almond">Almond (+$0.75)</label>
+                <label htmlFor="Almond (+$0.75)">Almond (+$0.75)</label>
               </div>
               <div className="radio-container">
                 <input
                   name="milk"
                   type="radio"
-                  value="Oat"
-                  id="Oat"
+                  value="Oat (+$0.75)"
+                  id="Oat (+$0.75)"
                   onChange={handleChange}
-                  checked={formData.milk === "Oat"}
+                  checked={formData.milk === "Oat (+$0.75)"}
                 />
-                <label htmlFor="Oat">Oat (+$0.75)</label>
+                <label htmlFor="Oat (+$0.75)">Oat (+$0.75)</label>
               </div>
             </fieldset>
           )}
@@ -206,45 +243,45 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                 <input
                   name="syrup"
                   type="radio"
-                  value="Vanilla"
-                  id="Vanilla"
+                  value="Vanilla (+$0.75)"
+                  id="Vanilla (+$0.75)"
                   onChange={handleChange}
-                  checked={formData.syrup === "Vanilla"}
+                  checked={formData.syrup === "Vanilla (+$0.75)"}
                 />
-                <label htmlFor="Vanilla">Vanilla (+$0.75)</label>
+                <label htmlFor="Vanilla (+$0.75)">Vanilla (+$0.75)</label>
               </div>
               <div className="radio-container">
                 <input
                   name="syrup"
                   type="radio"
-                  value="Caramel"
-                  id="Caramel"
+                  value="Caramel (+$0.75)"
+                  id="Caramel (+$0.75)"
                   onChange={handleChange}
-                  checked={formData.syrup === "Caramel"}
+                  checked={formData.syrup === "Caramel (+$0.75)"}
                 />
-                <label htmlFor="Caramel">Caramel (+$0.75)</label>
+                <label htmlFor="Caramel (+$0.75)">Caramel (+$0.75)</label>
               </div>
               <div className="radio-container">
                 <input
                   name="syrup"
                   type="radio"
-                  value="Hazelnut"
-                  id="Hazelnut"
+                  value="Hazelnut (+$0.75)"
+                  id="Hazelnut (+$0.75)"
                   onChange={handleChange}
-                  checked={formData.syrup === "Hazelnut"}
+                  checked={formData.syrup === "Hazelnut (+$0.75)"}
                 />
-                <label htmlFor="Hazelnut">Hazelnut (+$0.75)</label>
+                <label htmlFor="Hazelnut (+$0.75)">Hazelnut (+$0.75)</label>
               </div>
               <div className="radio-container">
                 <input
                   name="syrup"
                   type="radio"
-                  value="Mocha"
-                  id="Mocha"
+                  value="Mocha (+$0.75)"
+                  id="Mocha (+$0.75)"
                   onChange={handleChange}
-                  checked={formData.syrup === "Mocha"}
+                  checked={formData.syrup === "Mocha (+$0.75)"}
                 />
-                <label htmlFor="Mocha">Mocha (+$0.75)</label>
+                <label htmlFor="Mocha (+$0.75)">Mocha (+$0.75)</label>
               </div>
             </fieldset>
           )}
@@ -268,12 +305,12 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                 <input
                   name="muffinflavor"
                   type="radio"
-                  value="Blueberry"
-                  id="Blueberry"
+                  value="Blueberry (+$0.75)"
+                  id="Blueberry (+$0.75)"
                   onChange={handleChange}
-                  checked={formData.muffinflavor === "Blueberry"}
+                  checked={formData.muffinflavor === "Blueberry (+$0.75)"}
                 />
-                <label htmlFor="Blueberry">Blueberry (+$0.75)</label>
+                <label htmlFor="Blueberry (+$0.75)">Blueberry (+$0.75)</label>
               </div>
               <div className="radio-container">
                 <input
@@ -290,12 +327,12 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                 <input
                   name="muffinflavor"
                   type="radio"
-                  value="Lemon Poppyseed"
-                  id="Lemon Poppyseed"
+                  value="Lemon Poppyseed (+$0.75)"
+                  id="Lemon Poppyseed (+$0.75)"
                   onChange={handleChange}
-                  checked={formData.muffinflavor === "Lemon Poppyseed"}
+                  checked={formData.muffinflavor === "Lemon Poppyseed (+$0.75)"}
                 />
-                <label htmlFor="Lemon Poppyseed">
+                <label htmlFor="Lemon Poppyseed (+$0.75)">
                   Lemon Poppyseed (+$0.75)
                 </label>
               </div>
@@ -303,12 +340,12 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                 <input
                   name="muffinflavor"
                   type="radio"
-                  value="Pumpkin"
-                  id="Pumpkin"
+                  value="Pumpkin (+$0.75)"
+                  id="Pumpkin (+$0.75)"
                   onChange={handleChange}
-                  checked={formData.muffinflavor === "Pumpkin"}
+                  checked={formData.muffinflavor === "Pumpkin (+$0.75)"}
                 />
-                <label htmlFor="Pumpkin">Pumpkin (+$0.75)</label>
+                <label htmlFor="Pumpkin (+$0.75)">Pumpkin (+$0.75)</label>
               </div>
             </fieldset>
           )}
@@ -366,23 +403,23 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                 <input
                   name="bagelflavor"
                   type="radio"
-                  value="Blueberry"
-                  id="Blueberry"
+                  value="Blueberry (+$0.75)"
+                  id="Blueberry (+$0.75)"
                   onChange={handleChange}
-                  checked={formData.bagelflavor === "Blueberry"}
+                  checked={formData.bagelflavor === "Blueberry (+$0.75)"}
                 />
-                <label htmlFor="Blueberry">Blueberry (+$0.75)</label>
+                <label htmlFor="Blueberry (+$0.75)">Blueberry (+$0.75)</label>
               </div>
               <div className="radio-container">
                 <input
                   name="bagelflavor"
                   type="radio"
-                  value="Cinnamon Crunch"
-                  id="Cinnamon Crunch"
+                  value="Cinnamon Crunch (+$0.75)"
+                  id="Cinnamon Crunch (+$0.75)"
                   onChange={handleChange}
-                  checked={formData.bagelflavor === "Cinnamon Crunch"}
+                  checked={formData.bagelflavor === "Cinnamon Crunch (+$0.75)"}
                 />
-                <label htmlFor="Cinnamon Crunch">
+                <label htmlFor="Cinnamon Crunch (+$0.75)">
                   Cinnamon Crunch (+$0.75)
                 </label>
               </div>
@@ -408,17 +445,40 @@ export default function MenuItemDetails({ open, handleClick, ...item }) {
                 <input
                   name="croissantflavor"
                   type="radio"
-                  value="Chocolate"
-                  id="Chocolate"
+                  value="Chocolate (+$0.75)"
+                  id="Chocolate (+$0.75)"
                   onChange={handleChange}
-                  checked={formData.croissantflavor === "Chocolate"}
+                  checked={formData.croissantflavor === "Chocolate (+$0.75)"}
                 />
-                <label htmlFor="Chocolate">Chocolate (+$0.75)</label>
+                <label htmlFor="Chocolate (+$0.75)">Chocolate (+$0.75)</label>
               </div>
             </fieldset>
           )}
+          <div className="modal-quantity-container">
+            <button
+              className="menu-item-modal-decrement-btn"
+              type="button"
+              aria-label="Decrease quantity"
+              onClick={decrementByOne}
+            >
+              -
+            </button>
+            <span className="menu-item-modal-quantity">
+              {formData.quantity}
+            </span>
+            <button
+              className="menu-item-modal-increment-btn"
+              type="button"
+              aria-label="Increase quantity"
+              onClick={incrementByOne}
+            >
+              +
+            </button>
+          </div>
           <div className="menu-item-modal-btn">
-            <button className="add-to-cart-btn">Add To Cart</button>
+            <button className="add-to-cart-btn">
+              Add To Cart - ${item.price}
+            </button>
           </div>
         </form>
       </div>

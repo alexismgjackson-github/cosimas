@@ -7,65 +7,69 @@ export default [
     size: [
       {
         name: "Regular",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Large",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
     caffeine: [
       {
         name: "Single Shot",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Double Shot",
-        addPrice: 1.5,
+        addprice: 1.25,
       },
       {
         name: "Triple Shot",
-        addPrice: 1.5,
+        addprice: 1.75,
       },
     ],
     milk: [
       {
+        name: "No Milk",
+        addprice: 0,
+      },
+      {
         name: "Whole",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Almond",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Oat",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
     syrup: [
       {
         name: "No Syrup",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Simple Syrup",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Vanilla",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Caramel",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Hazelnut",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Mocha",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
   },
@@ -77,65 +81,69 @@ export default [
     size: [
       {
         name: "Regular",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Large",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
     caffeine: [
       {
         name: "Single Shot",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Double Shot",
-        addPrice: 1,
+        addprice: 1.25,
       },
       {
         name: "Triple Shot",
-        addPrice: 1.5,
+        addprice: 1.75,
       },
     ],
     milk: [
       {
+        name: "No Milk",
+        addprice: 0,
+      },
+      {
         name: "Whole",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Almond",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Oat",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
     syrup: [
       {
         name: "No Syrup",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Simple Syrup",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Vanilla",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Caramel",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Hazelnut",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Mocha",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
   },
@@ -147,49 +155,53 @@ export default [
     size: [
       {
         name: "Regular",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Large",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
     temperature: [
       {
         name: "Hot",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Iced",
-        addPrice: 0,
+        addprice: 0,
       },
     ],
     caffeine: [
       {
         name: "Single Shot",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Double Shot",
-        addPrice: 1,
+        addprice: 1.25,
       },
       {
         name: "Triple Shot",
-        addPrice: 1.5,
+        addprice: 1.75,
       },
     ],
     milk: [
       {
+        name: "No Milk",
+        addprice: 0,
+      },
+      {
         name: "Whole",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Almond",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Oat",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
   },
@@ -202,125 +214,48 @@ export default [
     size: [
       {
         name: "Regular",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Large",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
     caffeine: [
       {
         name: "Single Shot",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Double Shot",
-        addPrice: 1,
+        addprice: 1.25,
       },
       {
         name: "Triple Shot",
-        addPrice: 1.5,
+        addprice: 1.75,
       },
     ],
     milk: [
       {
+        name: "No Milk",
+        addprice: 0,
+      },
+      {
         name: "Whole",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Almond",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Oat",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
   },
   {
     id: 5,
-    name: "Latte",
-    price: 4.25,
-    description:
-      "Espresso and steamed milk, topped with a thin layer of milk foam. Mild flavour and a creamy texture.",
-    size: [
-      {
-        name: "Regular",
-        addPrice: 0,
-      },
-      {
-        name: "Large",
-        addPrice: 0.75,
-      },
-    ],
-    temperature: [
-      {
-        name: "Hot",
-        addPrice: 0,
-      },
-      {
-        name: "Iced",
-        addPrice: 0,
-      },
-    ],
-    caffeine: [
-      {
-        name: "Single Shot",
-        addPrice: 0,
-      },
-      {
-        name: "Double Shot",
-        addPrice: 1,
-      },
-      {
-        name: "Triple Shot",
-        addPrice: 1.5,
-      },
-    ],
-    milk: [
-      {
-        name: "Whole",
-        addPrice: 0,
-      },
-      {
-        name: "Almond",
-        addPrice: 0.75,
-      },
-      {
-        name: "Oat",
-        addPrice: 0.75,
-      },
-    ],
-    syrup: [
-      {
-        name: "No Syrup",
-        addPrice: 0,
-      },
-      {
-        name: "Simple Syrup",
-        addPrice: 0,
-      },
-      {
-        name: "Vanilla",
-        addPrice: 0.75,
-      },
-      {
-        name: "Caramel",
-        addPrice: 0.75,
-      },
-      {
-        name: "Hazelnut",
-        addPrice: 0.75,
-      },
-      {
-        name: "Mocha",
-        addPrice: 0.75,
-      },
-    ],
-  },
-  {
-    id: 6,
     name: "Cappuccino",
     price: 4.25,
     description:
@@ -328,44 +263,48 @@ export default [
     size: [
       {
         name: "Regular",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Large",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
     caffeine: [
       {
         name: "Single Shot",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Double Shot",
-        addPrice: 1,
+        addprice: 1.25,
       },
       {
         name: "Triple Shot",
-        addPrice: 1.5,
+        addprice: 1.75,
       },
     ],
     milk: [
       {
+        name: "No Milk",
+        addprice: 0,
+      },
+      {
         name: "Whole",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Almond",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Oat",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
   },
   {
-    id: 7,
+    id: 6,
     name: "Cold Brew",
     price: 4.25,
     description:
@@ -373,65 +312,154 @@ export default [
     size: [
       {
         name: "Regular",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Large",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
     caffeine: [
       {
         name: "Single Shot",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Double Shot",
-        addPrice: 1,
+        addprice: 1.25,
       },
       {
         name: "Triple Shot",
-        addPrice: 1.5,
+        addprice: 1.75,
       },
     ],
     milk: [
       {
+        name: "No Milk",
+        addprice: 0,
+      },
+      {
         name: "Whole",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Almond",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Oat",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
     syrup: [
       {
         name: "No Syrup",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Simple Syrup",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Vanilla",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Caramel",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Hazelnut",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Mocha",
-        addPrice: 0.75,
+        addprice: 0.75,
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: "Latte",
+    price: 4.25,
+    description:
+      "Espresso and steamed milk, topped with a thin layer of milk foam. Mild flavour and a creamy texture.",
+    size: [
+      {
+        name: "Regular",
+        addprice: 0,
+      },
+      {
+        name: "Large",
+        addprice: 0.75,
+      },
+    ],
+    temperature: [
+      {
+        name: "Hot",
+        addprice: 0,
+      },
+      {
+        name: "Iced",
+        addprice: 0,
+      },
+    ],
+    caffeine: [
+      {
+        name: "Single Shot",
+        addprice: 0,
+      },
+      {
+        name: "Double Shot",
+        addprice: 1.25,
+      },
+      {
+        name: "Triple Shot",
+        addprice: 1.75,
+      },
+    ],
+    milk: [
+      {
+        name: "No Milk",
+        addprice: 0,
+      },
+      {
+        name: "Whole",
+        addprice: 0,
+      },
+      {
+        name: "Almond",
+        addprice: 0.75,
+      },
+      {
+        name: "Oat",
+        addprice: 0.75,
+      },
+    ],
+    syrup: [
+      {
+        name: "No Syrup",
+        addprice: 0,
+      },
+      {
+        name: "Simple Syrup",
+        addprice: 0,
+      },
+      {
+        name: "Vanilla",
+        addprice: 0.75,
+      },
+      {
+        name: "Caramel",
+        addprice: 0.75,
+      },
+      {
+        name: "Hazelnut",
+        addprice: 0.75,
+      },
+      {
+        name: "Mocha",
+        addprice: 0.75,
       },
     ],
   },
@@ -443,71 +471,71 @@ export default [
     bagelflavor: [
       {
         name: "Plain",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Everything",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Sesame",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Poppyseed",
-        addPrice: 0,
+        addprice: 0,
       },
       {
         name: "Blueberry",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
       {
         name: "Cinnamon Crunch",
-        addPrice: 0.75,
+        addprice: 0.75,
       },
     ],
   },
   {
     id: 9,
-    name: "Muffin",
-    price: 2.75,
-    description: "5 Assorted flavours.",
-    muffinflavor: [
-      {
-        name: "Chocolate Chip",
-        addPrice: 0,
-      },
-      {
-        name: "Blueberry",
-        addPrice: 0.75,
-      },
-      {
-        name: "Banana Nut",
-        addPrice: 0,
-      },
-      {
-        name: "Lemon Poppyseed",
-        addPrice: 0.75,
-      },
-      {
-        name: "Pumpkin",
-        addPrice: 0.75,
-      },
-    ],
-  },
-  {
-    id: 10,
     name: "Croissant",
     price: 2.25,
     description: "2 Assorted flavours.",
     croissantflavor: [
       {
         name: "Butter",
-        addPrice: 0,
+        addprice: 0,
       },
       {
-        name: "Chocolate (+$0.75)",
-        addPrice: 0,
+        name: "Chocolate",
+        addprice: 0,
+      },
+    ],
+  },
+  {
+    id: 10,
+    name: "Muffin",
+    price: 2.75,
+    description: "5 Assorted flavours.",
+    muffinflavor: [
+      {
+        name: "Chocolate Chip",
+        addprice: 0,
+      },
+      {
+        name: "Blueberry",
+        addprice: 0.75,
+      },
+      {
+        name: "Banana Nut",
+        addprice: 0,
+      },
+      {
+        name: "Lemon Poppyseed",
+        addprice: 0.75,
+      },
+      {
+        name: "Pumpkin",
+        addprice: 0.75,
       },
     ],
   },
